@@ -39,7 +39,19 @@
     ],
   };
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  // Обращаемся к методу post и методу объекта author
+  console.log(post.author);
+  // Обращаемся к методу post, к 1 массиву данных comments = [0],
+  // достаём данные из метода объекта rating,
+  // и достаём оттуда данные из метода dislikes
+  console.log(post.comments[0].rating.dislikes);
+  // Обращаемся к методу post, к 2 массиву данных comments = [1],
+  // далее обращаемся к методу userId и выводим в консоль id
+  console.log(post.comments[1].userId);
+  // Обращаемся к методу post, к 2 массиву данных comments = [1],
+  // далее обращаемся к методу text и выводим в консоль текст
+  console.log(post.comments[1].text);
+
 </script>
 </body>
 </html>
